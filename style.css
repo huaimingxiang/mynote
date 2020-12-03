@@ -10,6 +10,11 @@ Version:        0.1.0
 
 @import url("../mynote/style.css");
 
+#site-title a {
+    color: #009900;
+}
+
+
 html {
     font-size: 16px;
     color: #1f0909;
@@ -297,6 +302,9 @@ strong {
     margin: 0em;
     font-size: inherit;
 }
+
+
+
 
 
 

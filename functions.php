@@ -1,14 +1,4 @@
 <?php
-/*
-Theme Name:     Mynote Child
-Theme URI:      https://example.com/about/
-Description:    Child theme for Mynote theme 
-Author:         Huai mingxiang
-Author URI:     http: //example.com/about/
-Template:       mynote
-Version:        0.1.0
-*/
-
 function colorCloud($text) {
 $text = preg_replace_callback('|<a (.+?)>|i', 'colorCloudCallback', $text);
 

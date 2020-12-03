@@ -25,7 +25,6 @@ get_header();
 
 			<div class="single-post-header">
 				<div class="container">
-
 					<h1 id="post-title" itemprop="headline"><?php the_title(); ?></h1>
 					<div class="post-mynote-buttons">
 
@@ -52,7 +51,6 @@ get_header();
 	<div class="container">
 		<div class="row row-layout-choice-post">
 			<main id="main-container" class="<?php echo esc_attr( mynote_main_container_css() ); ?>" role="main">
-
 				<?php if ( have_posts() ) : ?>
 
 					<?php while ( have_posts() ) : ?>
@@ -82,6 +80,10 @@ get_header();
 
 						<section class="modified-date" itemprop="dateModified" content="<?php the_modified_date( 'c' ); ?>">
 							<?php esc_html_e( 'Last modified: ', 'mynote' ); ?><?php the_modified_date(); ?>
+						</section>
+						
+						<section class="post-mynote-buttons">
+						    <?php include(get_stylesheet_directory().'/custom_share.php'); ?> 
 						</section>
 
 						<section class="tags">
